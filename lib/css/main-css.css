@@ -1,0 +1,190 @@
+	:root{
+		--hac-theme: #006aff;
+
+      --hac-label-clr-1: #006aff;
+      --hac-label-clr-2: #e91e63;
+      --hac-label-clr-3: #ff9800;
+      --hac-label-clr-4: #795548;
+      --hac-label-clr-5: #8bc34a;
+      --hac-label-clr-6: #9e9e9e;
+
+	}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*@import url('https://calculatorexpress.com/Euploads/ICONS/icons.css');*/
+
+.hac-label-clr-1{color: var(--hac-label-clr-1);}
+.hac-label-clr-2{color: var(--hac-label-clr-2);}
+.hac-label-clr-3{color: var(--hac-label-clr-3);}
+.hac-label-clr-4{color: var(--hac-label-clr-4);}
+.hac-label-clr-5{color: var(--hac-label-clr-5);}
+.hac-label-clr-6{color: var(--hac-label-clr-6);}
+
+.bold-txt-hac, .bold-txt-hac input[type="text"]{
+    font-weight: bold;
+}
+
+.hac-show-more {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 12px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+   input.hac-ti[type="text"], input.hac-ti[type="text"]:focus, input.hac-ti[type="email"], input.hac-ti[type="email"]:focus {
+    padding: 10px;
+    border: 1px solid var(--hac-theme)!important;
+    background-color: white!important;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+
+    width: 100%;
+}
+
+
+
+input.hac-ti[type="text"].hac-readonly {
+    border: 0px!important;
+}
+
+	.hac-heading{
+      width: 100%;
+      padding: 12px;
+      background-color: var(--hac-theme);
+      color: white;
+      text-align: left;
+
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+	}
+
+    /*.hac-head-disc{text-align: left;}*/
+	.hac-head-disc::before{
+		content: "\f101 \00a0 ";
+		font-family:"Font Awesome 5 Free";
+		font-weight: 900;
+
+	}
+
+	.hac-head-disc::after {
+    content: "\f13a ";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+    margin-right: 3px;
+    margin-top: -4px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+	.hac-input-div {
+    display: flex;
+    /*justify-content: space-between;*/
+    /* border: 4px solid red; */
+    margin-top: 6px;
+}
+	.hac-input-div > div:nth-child(1){
+		width: 80%;
+	}
+
+	.hac-input-div > div:nth-child(2){
+		width: 20%;
+	}
+
+	.hac-top-spacer-h{
+	margin-top: 20px;
+}
+
+.hac-top-spacer-i{
+	margin-top: 30px;
+}
+
+.hac-bottom-spacer-h{
+	margin-bottom: 20px;
+}
+
+/*[data-closet-body="3"],
+[data-closet-body="4"],
+[data-closet-body="5"],
+[data-closet-body="6"]
+{
+   display: none;
+}*/
+
+
+
+button.hac-buttons, button.hac-buttons:not(:hover):not(:active):not(.has-background), button.hac-buttons:hover, button.hac-buttons:focus {
+    background-color: #e91e63;
+    color: #ffffff;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    font-family: Karla;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: unset;
+    outline: none;
+    max-width: 247px;
+    margin: auto;
+}
+
+
+.happs-noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+ 
+
+ .hac-card{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 12px;
+    /*border-radius: 20px;*/
+    }
+
+
+
+.loader-hac {
+  border: 5px solid #f3f3f3;
+    -webkit-animation: hac_spin 1s linear infinite;
+    animation: hac_spin 1s linear infinite;
+    border-top: 5px solid var(--hac-theme);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  
+}
+
+/* Safari */
+@-webkit-keyframes hac_spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes hac_spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+    @media screen and (max-width: 600px) {
+
+.hac-heading{
+    
+      font-size: 14px;
+    }
+
+}
+
+
